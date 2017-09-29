@@ -73,7 +73,7 @@ That was the phrase structure analysis, or as we call it POS (Part Of Speech) Ta
 
 Now comes the parser part. Actually, **postagga** offers a parser that needs semantic **rules** to be able to map a particular phrase structure into data. In our example, we know that the first **Noun** depicts a subject carrying out some action. This action is  represented by the **Verb** following it.Finally, the **Noun** coming after the **Verb** will undergo this action.
 
-**postagga** parsers just lets you express such rules so they can extract the data for you. You literally tell them to take the first **Noun**, call it **Subject**, take the verb, label it **action** and the last **Noun** will be the **Object**. and package all of it into the following data strucutre:
+**postagga** parsers just let you express such rules so they can extract the data for you. You literally tell them to take the first **Noun**, call it **Subject**, take the verb, label it **action** and the last **Noun** will be the **Object**. and package all of it into the following data strucutre:
 
 ```clojure
 {:Subject "Rafik" :Action "Loves" :Object "Apples"}
